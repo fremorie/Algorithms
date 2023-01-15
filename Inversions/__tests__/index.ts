@@ -1,5 +1,5 @@
 import sortAndCountInversions from '../index'
-import input from './testInput'
+import input from '../data/testInput'
 
 describe('sortAndCountInversions', () => {
     it('should sort an array and count its inversions', () => {
@@ -21,7 +21,6 @@ describe('sortAndCountInversions', () => {
     })
 
     it('should sort and count inversions in a big array', () => {
-        console.log(input)
         expect(sortAndCountInversions(input)[1]).toEqual(2407905288)
     })
 })
